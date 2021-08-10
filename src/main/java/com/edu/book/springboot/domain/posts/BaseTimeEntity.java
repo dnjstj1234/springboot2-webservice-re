@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 //상속 받을 경우 부모 클래스의 필드가 자식 클래스의 컬럼으로 인식 됨
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
-public class BaseTimeEntity {
+public abstract class BaseTimeEntity {
 
     @CreatedDate
     private LocalDateTime createdDate;
